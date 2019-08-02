@@ -7,7 +7,7 @@ Installation:
 Linux:
 
 1. Copy repository. (Download and unzip)
-2. Type in the command " g++ -o out -I . -I ./nauty *.cpp nauty/*.c"
+2. Type in the command "g++ -o out -I . -I ./nauty \*.cpp nauty/\*.c"
 3. Type in "./out" or "./out exampleGraph.txt 3 1000 0". Change the last one as needed.
 
 Arguments:
