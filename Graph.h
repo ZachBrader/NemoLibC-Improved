@@ -25,7 +25,7 @@
 class Graph 
 {
 public:
-	Graph(bool dir = false) noexcept : directed(dir) {}
+	Graph(bool dir = false) noexcept : directed(dir) { adjacencyLists.push_back(std::unordered_set<vertex>()); }
 	
 
 	Graph(const std::vector<int>& _EDGES, const std::size_t newVerticesSize, const bool _DIR = false) : directed(_DIR)
@@ -37,7 +37,8 @@ public:
 
 	Graph(std::string filename, bool dir = false) : directed(dir)
 	{ 
-		parse(filename); 
+            adjacencyLists.push_back(std::unordered_set<vertex>());
+            parse(filename); 
 	};
 
 
