@@ -84,9 +84,8 @@ void Graph::parse(string filename)
 	} // end if
 	
 	// read in the entire graph
-	while (in) 
+	while (getline(in, currentline))
 	{
-		getline(in, currentline);
 		if (currentline.size() > 0) 
 		{
 			lines.push_back(currentline);
